@@ -1,60 +1,6 @@
-/* =================================================================== 
- *
- *  Transcend v1.0 Main Stylesheet
- *  03-19-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## Spacing 
- *    ## pace.js styles - minimal
- *  # preloader
- *  # forms
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *    ## alert box
- *    ## additional typo styles
- *    ## skillbars
- *  # reusable and common theme styles
- *    ## display headings
- *  # header styles
- *    ## header logo
- *    ## main navigation
- *    ## mobile menu toggle 
- *  # home
- *    ## home content
- *    ## home sidelinks
- *    ## home scroll
- *    ## home scroll
- *    ## home animations
- *  # about
- *    ## about process
- *  # services
- *    ## services list
- *  # works
- *    ## bricks/masonry
- *  # testimonials
- *  # stats 
- *  # contact 
- *    ## contact social
- *    ## subscribe
- *    ## copyright
- *    ## go to top
- *
- * =================================================================== */
 
 
 /* ===================================================================
- * # base style overrides
- *
  * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
@@ -79,6 +25,7 @@ body {
   color: #555555;
   margin: 0;
   padding: 0;
+  
 }
 
 /* ------------------------------------------------------------------- 
@@ -101,6 +48,39 @@ a:active {
   outline: 0;
 }
 
+.container{
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+}
+.btn {
+  padding: 30px;
+  margin: 30px;
+  font-size: 1em;
+  padding: 5px;
+  font-family: monospace;
+  letter-spacing: 1px;
+  margin: 3px;
+  
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
 
 /* ===================================================================
  * # typography & general theme styles
@@ -195,17 +175,46 @@ p.lead {
   p.lead {
     font-size: 2.2rem;
   }
+  .btn{
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
 }
 @media only screen and (max-width: 1000px) {
   p.lead {
     font-size: 2.1rem;
+  }
+  
+  .btn{
+    text-align: center;
+    font-size: 12px;
+    width: 50%;
   }
 }
 @media only screen and (max-width: 800px) {
   p.lead {
     font-size: 1.9rem;
   }
+
+  .btn{
+    width: 50%;
+    font-size: 9px;
+    text-align: center;
+  }
+
 }
+
+@media only screen and (max-width: 500px){
+  .btn {
+    width: 90%;
+    font-size: 5px;
+    text-align: center;
+}
+}
+
 
 em, i, strong, b {
   font-size: inherit;
