@@ -1284,3 +1284,10 @@ section.footer ul li a {
 	padding: 15px;
 	margin: auto;
   }
+
+.form-registro{
+	width: 531px;
+    height: 826px;
+    text-align: center;
+    box-sizing: content-box;
+}
