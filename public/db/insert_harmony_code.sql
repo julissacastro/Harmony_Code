@@ -6,7 +6,7 @@ INSERT INTO `db_harmony_code`.`tbl_acciones` (`CODIGO_ACCION`, `NOMBRE_ACCION`) 
 ('4', 'Crear'), 
 ('5', 'Modificar');
 
--------------------------------------------------------------------------------------------------
+
 
 INSERT INTO `db_harmony_code`.`tbl_tipos_lugar` (`CODIGO_TIPO_LUGAR`, `NOMBRE_TIPO_LUGAR`) VALUES
  ('1', 'Pais'), 
@@ -15,20 +15,20 @@ INSERT INTO `db_harmony_code`.`tbl_tipos_lugar` (`CODIGO_TIPO_LUGAR`, `NOMBRE_TI
  ('4', 'Estado'), 
  ('5', 'Provincia');
 
--------------------------------------------------------------------------------------------------
+
 INSERT INTO `db_harmony_code`.`tbl_tipos_usuarios` (`CODIGO_TIPO_USUARIO`, `NOMBRE_TIPO_USUARIO`) VALUES 
 ('1', 'Admin'), 
 ('2', 'Basico'), 
 ('3', 'Estandar'), 
 ('4', 'Premium');
 
--------------------------------------------------------------------------------------------------
+
 INSERT INTO `db_harmony_code`.`tbl_tipo_documento` (`CODIGO_TIPO_DOCUMENTO`, `NOMBRE_TIPO_DOCUMENTO`) VALUES 
 ('1', 'Carpeta'),
 ('2', 'Archivo');
 
 
--------------------------------------------------------------------------------------------------
+
 INSERT INTO `db_harmony_code`.`tbl_lugares` (`CODIGO_LUGAR`, `CODIGO_TIPO_LUGAR`, `CODIGO_LUGAR_PADRE`, `NOMBRE_LUGAR`, `LATITUD`, `LONGITUD`) VALUES 
 ('1', '1', NULL, 'Honduras', NULL, NULL),
 ('2', '2', 1, 'Francisco Morazan', NULL, NULL),
@@ -39,19 +39,17 @@ INSERT INTO `db_harmony_code`.`tbl_lugares` (`CODIGO_LUGAR`, `CODIGO_TIPO_LUGAR`
 ('7', '3', 2, 'Valle de Angeles', NULL, NULL),
 ('8', '3', 2, 'Cantarranas', NULL, NULL);
 
--------------------------------------------------------------------------------------------------
+
 INSERT INTO `db_harmony_code`.`tbl_generos` (`CODIGO_GENERO`, `NOMBRE_GENERO`) VALUES
  ('1', 'Masculino'),
  ('2', 'Femenino');
-
-
--------------------------------------------------------------------------------------------------
+ 
 INSERT INTO `db_harmony_code`.`tbl_estado_notificacion` (`CODIGO_ESTADO_NOTIFICACION`, `NOMBRE_ESTADO_NOTIFICACION`) VALUES 
 ('1', 'Leido'),
 ('2', 'No leido');
 
 
--------------------------------------------------------------------------------------------------
+
 INSERT INTO `db_harmony_code`.`tbl_acciones` (`CODIGO_ACCION`, `NOMBRE_ACCION`) VALUES
 ('1', 'Crear'), 
 ('2', 'Agregar'), 
@@ -60,14 +58,14 @@ INSERT INTO `db_harmony_code`.`tbl_acciones` (`CODIGO_ACCION`, `NOMBRE_ACCION`) 
 ('5', 'Eliminar');
 
 
--------------------------------------------------------------------------------------------------
+
 INSERT INTO `db_harmony_code`.`tbl_usuarios` (`CODIGO_USUARIO`, `CODIGO_GENERO`, `CODIGO_TIPO_USUARIO`, `CODIGO_LUGAR`, `NOMBRE_USUARIO`, `APELLIDO_USUARIO`, `CORREO`, `CONTRASENIA`, `FOTO_PERFIL`, `FOTO_PORTADA`, `FECHA_NACIMIENTO`, `FECHA_REGISTRO`) VALUES
 ('1', '2', '1', '7', 'Julissa', 'Castro', 'admin', '$2y$10$LLE5pFVj3EWwY2OJosKuuedF.FiTZy/Pj9AWhmqC5kVgoITka/wL.', NULL, NULL, '1994-07-01', '2018-07-25'),
 ('2', '1', '2', '4', 'Duglas', 'Ponce', 'dponce', '$2y$10$LLE5pFVj3EWwY2OJosKuuedF.FiTZy/Pj9AWhmqC5kVgoITka/wL.', NULL, NULL, '1999-11-09', '2018-07-26'),
 ('3', '1', '2', '4', 'Jasiel', 'Ponce', 'jponce', '$2y$10$LLE5pFVj3EWwY2OJosKuuedF.FiTZy/Pj9AWhmqC5kVgoITka/wL.', NULL, NULL, '1999-11-09', '2018-07-26'),
 ('4', '2', '2', '7', 'Betsabe', 'Lopez', 'blopez', '$2y$10$LLE5pFVj3EWwY2OJosKuuedF.FiTZy/Pj9AWhmqC5kVgoITka/wL.', NULL, NULL, '1999-11-09', '2018-07-26');
 
-----------------------------------------------------------------------------------------------------
+---
 INSERT INTO `db_harmony_code`.`tbl_planes` (`CODIGO_PLAN`, `NOMBRE_PLAN`, `PESO_MB`, `COSTO_PLAN`, `PERIODICIDAD`, `DESCRIPCION_PLAN`) VALUES 
 (1, 'Basico', '15', '0', 'Hasta Agotar Peso', 'Plan inicial de Harmony Code'),
 (2, 'Estandar', '100', '25', '1 año o Hasta Agotar Peso', 'Plan recomendado a pequeñas empresas'), 
