@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../css/vendor.css">
     <link rel="stylesheet" href="../css/main-landing.css">
     <link rel="stylesheet" href="../css/util.css">
+    <link rel="stylesheet" href="../css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
 
     <!-- favicons
     ================================================== -->
@@ -72,28 +74,38 @@
                                 LogIn
                             </span>
                         </div>
-                        <form class="login100-form validate-form">
+                        <div class="login100-form validate-form">
                             <div class="wrap-input100 validate-input m-b-26" data-validate="Usuario Requerido">
                                 <span class="label-input100">Usuario</span>
-                                <input class="input100" type="text" name="username" placeholder="Ingrese Usuario">
+                                <input class="input100" type="text" name="username" placeholder="Ingrese Usuario" id="usuario">
                                 <span class="focus-input100"></span>
                             </div>
         
-                            <div class="wrap-input100 validate-input m-b-18" data-validate = "Contraseña Requerida">
+                            <div class="wrap-input100 validate-input m-b-18" data-validate = "Contraseña Requerida" >
                                 <span class="label-input100">Contraseña</span>
-                                <input class="input100"  type="password" name="pass" placeholder="Ingrese contraseña">
+                                <input class="input100"  type="password" name="pass" placeholder="Ingrese contraseña" id="contrasena">
                                 <span class="focus-input100"></span>
                             </div>
        
                             <div class="container-login100-form-btn">
-                                <a href="home1.html"><button type="button" class="login100-form-btn">
+                                <button type="button" class="login100-form-btn" id="btn-login">
                                     Iniciar Sesión
-                                </button></a>
+                            </button>
+                                
                                 <a href="signin.html" ><button type="button" class="btn-sm btn-link login100-form-btnr">
                                         Registrarse
                                 </button></a>
                             </div>
-                        </form>
+                            <div class="row">
+                                <div class="col-xs-8">
+                                        <a href="#" class="btn btn-block btn-social btn-facebook btn-flat inicia-redes"><i class="fa fa-facebook"></i> Inicia con
+                                        Facebook</a><br>
+                                        <a href="#" class="btn btn-block btn-social btn-google btn-flat inicia-redes"><i class="fa fa-google-plus"></i> Inicia con
+                                        Google+</a>
+                              </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,6 +180,7 @@
     <script src="../js/pace.min.js"></script>
     <script src="../js/main-landing.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/controlador.js"></script>
 
 </body>
 

@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main-landing.css">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-
-    <!-- favicons
+    <link rel="stylesheet" href="css/AdminLTE.min.css">
+        <!-- favicons
     ================================================== -->
     <link rel="icon" href="img/Logo_Harmony_Code_64x64.png">
 
@@ -94,8 +94,12 @@
                 Una excelente herramienta para la gestión y <br>
                 codificación colaborativa en línea<br>
                 </p>
-                <div class="container">                    
-                    <a href="pages/login.html"><button  class="btn">Ir a  Harmony Code</button></a>
+                <div class="container">   
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3 col-lg-4">                 
+                    <a href="pages/login.html"><button  class="btn btn-harmony">Ir a  Harmony Code</button></a>
+                        </div>
+                    </div>
                 </div>                
             </div>
         </div>
@@ -197,96 +201,59 @@
             </div>
         </div>
 
-        <div class="limiter ">
-            <div class="container-login100 col-lg-4 col-md-4 col-xs-12 col-12">
-                <div class="wrap-login200">
-                    <div class="login100-form-title">
-                            <span class="login100-form-title-1">
-                                Planes
-                            </span>
-                        </div>
-                        <form class="login100-form validate-form">
-                          <div class="row text-center pad-row">
-                            <div class="col-md-3 ">
-                                <div class="panel panel-success">
-                                    <div class="panel-heading">
-                                        <h4>PLAN BÁSICO</h4>
-                                    </div>
-                                    <div class="panel-body " >
-                                        <div class="round-body">
-                                            <div class="price-main">
-                                                <span class="price-Unit"><i class="fa fa-dollar"></i>10</span>
-                                                <small>Por Mes</small>
-                                            </div>
-                                        </div>
-                                        <ul class="plan-two">
-                                            <li><strong>15 GB</strong> de Almacenamiento</li>
-                                            <li>Soporte <strong>Gratis</strong> </li>
-                                        </ul>
-                                        <div class="container" style="margin:2px -50px;">                    
-                                                <a href="pages/login.html"><button type="button" class="btn">Suscribir</button></a>
-                                        </div> 
-                                        
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                              <div class="panel panel-success">
-                                  <div class="panel-heading">
-                                      <h4>PLAN ESTÁNDAR</h4>
-                                  </div>
-                                  <div class="panel-body">
-                                      <div class="round-body">
-                                          <div class="price-main">
-                                              <span class="price-Unit"><i class="fa fa-dollar"></i>20</span>
-                                              <small>Por Mes</small>
-                                          </div>
-                                      </div>
-                                      <ul class="plan-two">
-                                          <li><strong>100 GB</strong> de Almacenamiento</li>
-                                          <li>Soporte <strong>Gratis</strong> </li>
-                                      </ul>
-                                      <div class="container" style="margin:2px -50px">                    
-                                            <a href="pages/login.html"><button type="button" class="btn">Suscribir</button></a>
-                                    </div> 
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="col-md-3">
-                            <div class="panel panel-success">
-                                <div class="panel-heading">
-                                    <h4>PLAN PREMIUM</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="round-body">
-                                        <div class="price-main">
-                                            <span class="price-Unit"><i class="fa fa-dollar"></i>50</span>
-                                            <small>Por Mes</small>
-                                        </div>
-                                    </div>
-                                    <ul class="plan-two">
-                                        <li><strong>1 TB</strong> de Almacenamiento</li>
-                                        <li>Soporte <strong>Gratis</strong> </li>
-                                    </ul>
-                                    <div class="container" style="margin:2px -50px">                    
-                                            <a href="pages/login.html"><button type="button" class="btn">Suscribir</button></a>
-                                    </div> 
-                                </div>
-                            </div>
-                          </div>  
-                          
-                        </form>
-                      </div>
-                  </div>
+        <div class="row">
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-green-active">
+                <div class="inner">
+                  <h3>Gratis</h3>
+    
+                  <p class="por2">Plan Básico - <strong>15 GB</strong> Almacenamiento</p>
+                </div>
+                <div class="icon">
+                  <i class="fa fa-shopping-cart"></i>
+                </div>
+                <a href="pages/planes.html#services1" class="small-box-footer">
+                  Más info <i class="fa fa-arrow-circle-right"></i>
+                </a>
               </div>
-              <div class="row services-list block-1-3 block-m-1-2 block-tab-full">
-                </div> <!-- end services-list -->
+            </div>
 
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                  <!-- small box -->
+                  <div class="small-box bg-purple-gradient">
+                    <div class="inner">
+                      <h3>$30</h3>
+                      <p class="por2">Plan Estándar - <strong>100 GB</strong> Almacenamiento</p>
+                    </div>
+                    <div class="icon">
+                      <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <a href="pages/planes.html#services2" class="small-box-footer">
+                      Más info <i class="fa fa-arrow-circle-right"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-xs-6">
+                      <!-- small box -->
+                      <div class="small-box bg-aqua-active">
+                        <div class="inner">
+                          <h3>$50</h3>            
+                          <p class="por2">Plan Premium - <strong> 1 TB </strong> Almacenamiento</p>
+                        </div>
+                        <div class="icon">
+                          <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <a href="pages/planes.html#services3" class="small-box-footer">
+                          Más info <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                      </div>
+                    </div>
+        
     </section> <!-- end s-services -->
-
 
     <!-- works
     ================================================== -->
@@ -320,7 +287,7 @@
                         </div>
 
                         <div class="item-folio__caption">
-                            <p>Mujeres conquistando este mundo de la programación</p>
+                            <p>Mujeres conquistando el mundo de la programación</p>
                         </div>
 
                     </div> <!-- end item-folio -->
@@ -536,39 +503,30 @@
             <div class="col-full contact-main" data-aos="fade-up">
                 <a href="https://www.gmail.com" class="contact-email">harmony_code@gmail.com</a>
             </div> 
-
         </div> 
-        <div class="row">
-        <div class="portfolio-item landscape mix_all" style="margin: 3px 176px;" data-cat="landscape" >
-                <img src="img/Womenprgrammers.jpg" class="img-responsive" style="text-align: center;width: 100%;;" alt="" /><br><br>
-                <div class="overlay" style=" height: 40px;">
-                   <a class="preview btn btn-info" style="background-color: #47AAD3; padding-bottom: 0px;" title="Image Title Here" href="img/Womenprgrammers.jpg"><i class="fa fa-plus fa-2x"></i></a>                </div>
-            </div>
-        </div><br><br>
-                   
         <div class="row">
             <div class="col-md-12">
              <div class="panel panel-default">
                 <div class="panel-heading subhead subhead--light">Inicia Sesión Con
-                </div>
+                </div><br>
                 <div class="panel-body">
                     <div class="row">
-                    
+                        <div class="container">
+                        <a href="pages/login.html"><button  class="btn btn-harmony">Ir a  Harmony Code</button></a> <br>
+                    </div>
                      <div class="col-md-4 social-buttons ">
-        <a class="btn btn-block btn-social btn-facebook contacta" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
-            <i class="fa fa-facebook"></i> Facebook
-        </a>
-          
-        <a class="btn btn-block btn-social btn-twitter contacta" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-twitter']);">
-            <i class="fa fa-twitter"></i> Twitter
-        </a>
-        
-        <a class="btn btn-block btn-social btn-google-plus contacta" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-google-plus']);">
-            <i class="fa fa-google-plus"></i>Google
-        </a>
-        <div class="container">                    
-                <a href="pages/login.html"><button  class="btn">Ir a  Harmony Code</button></a>
-        </div>  
+
+                        <a class="btn btn-block btn-social btn-facebook contacta" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-facebook']);">
+                            <i class="fa fa-facebook"></i> Facebook
+                        </a>
+                        
+                        <a class="btn btn-block btn-social btn-twitter contacta" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-twitter']);">
+                            <i class="fa fa-twitter"></i> Twitter
+                        </a>
+                        
+                        <a class="btn btn-block btn-social btn-google-plus contacta" onclick="_gaq.push(['_trackEvent', 'btn-social', 'click', 'btn-google-plus']);" style="background-color: red;">
+                            <i class="fa fa-google-plus"></i>Google
+                        </a>
                
         <div class="cl-go-top">
             <a class="smoothscroll" title="Ir arriba" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>

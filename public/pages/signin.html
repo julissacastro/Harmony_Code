@@ -66,44 +66,64 @@
         <div class="home-content">
             <div class="limiter ">
                 <div class="container-login100 ">
-                    <div class="wrap-login100 " style="height: 822px;">
+                    <div class="wrap-login100 " style="height: 865px;">
                         <div class="login100-form-title ">
                             <span class="login100-form-title-1">
                                 Registrarse
                             </span>
                         </div>
                         
-                        <form class="login100-form validate-form ">
+                        <form action="/login" method="POST" class="login100-form validate-form ">
                                 <div class="wrap-input100 validate-input m-b-26" data-validate="Nombre Requerido">
-                                <span class="label-input100">Primer Nombre</span>
-                                <input class="input100" type="text" name="firstname" placeholder="Ingrese su  Nombre">
+                                <span class="label-input100">Nombre</span>
+                                <input class="input100" type="text" name="firstname" placeholder="Ingrese su  Nombre" id="nombre">
                                 <span class="focus-input100"></span>
                             </div>
-                            <div class="wrap-input100 validate-input m-b-26" data-validate="Apellido Requerido">
+                            <div class="wrap-input100 validate-input m-b-26" data-validate="Apellido Requerido" >
                                 <span class="label-input100">Apellido</span>
-                                <input class="input100" type="text" name="lastname" placeholder="Ingrese su apellido">
+                                <input class="input100" type="text" name="lastname" placeholder="Ingrese su apellido" id="apellido">
                                 <span class="focus-input100"></span>
                             </div>
                             <div class="wrap-input100 validate-input m-b-26" data-validate="Correo Requerido">
                                 <span class="label-input100">Correo</span>
-                                <input class="input100" type="email" name="email" placeholder="Ingrese Correo">
+                                <input class="input100" type="email" name="email" placeholder="Ingrese Correo" id="correo">
                                 <span class="focus-input100"></span>
                             </div>
                             <div class="wrap-input100 validate-input m-b-18" data-validate = "Contraseña Requerida">
                                 <span class="label-input100">Contraseña</span>
-                                <input class="input100"  type="password" name="pass" placeholder="Ingrese contraseña">
+                                <input class="input100"  type="password" name="pass" placeholder="Ingrese contraseña" id="contrasena">
                                 <span class="focus-input100"></span>
                             </div>
                             <div class="wrap-input100 validate-input m-b-26" data-validate="Fecha Nacimiento Requerida">
                                 <span class="label-input100">Fecha Nacimiento</span>
-                                <input class="input100" type="date" name="birthday" placeholder="Ingrese su Fecha de Nacimiento">
+                                <input class="input100" type="date" name="birthday" placeholder="Ingrese su Fecha de Nacimiento" id="fNacimiento">
                                 <span class="focus-input100"></span>
                             </div>
+                            <div class="wrap-input100 validate-input m-b-26" data-validate="Genero Requerido">
+                                <span class="label-input100">Genero</span>
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="radio" value="1">
+                                    Masculino
+                                  </label>
+                                  <label>
+                                    <input type="radio" name="optionsRadios" id="radio" value="2">
+                                    Femenino
+                                  </label>
+                                <span class="focus-input100"></span>
+                            </div>
+                        <div class="wrap-input100 validate-input m-b-26" data-validate="Url Requerido">
+                            <span class="label-input100">Url de Imagen</span>
+                            <input class="input100" type="text" placeholder="Ingrese su Url de Imagen" id="urlImagen">
+                            <span class="focus-input100"></span>
+                        </div>
        
                             <div class="container-login100-form-btn">
-                                <button class="login100-form-btn "  href="home.html">
+                                <button type="button" class="login100-form-btn" id="registrar">
                                     Registrarse
                                 </button>
+                                <a href="login.html" ><button type="button" class="btn-sm btn-link login100-form-btnr">
+                                    Iniciar Sesión
+                            </button></a>
                             </div>
                         </form>
                     </div>
@@ -180,6 +200,7 @@
     <script src="../js/pace.min.js"></script>
     <script src="../js/main-landing.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/controlador.js"></script>
 
 </body>
 
